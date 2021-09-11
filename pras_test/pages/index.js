@@ -1,9 +1,12 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import { signInWithGoogle } from '../firebase/clientApp';
 
-export default function Home() {
+const Login = () => {
   return (
     <div>
-      <p>Hello</p>
+        <button onClick={signInWithGoogle}> Sign in with Google</button>
     </div>
   )
 }
+
+export default Login;
